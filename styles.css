@@ -1,0 +1,73 @@
+:root {
+  --bg: #14100c;
+  --panel: #1f1812;
+  --text: #e8ddcb;
+  --dim: #a89a82;
+  --brass: #d9a441;
+  --brass-dark: #8a6a2f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 1rem 3rem;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main, header {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 2rem 0 0.5rem;
+  color: var(--brass);
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 2.5rem 0 0.5rem;
+  color: var(--brass);
+}
+
+p, li { color: var(--text); }
+
+a { color: var(--brass); text-decoration-color: var(--brass-dark); }
+
+.tagline {
+  font-size: 1.15rem;
+  color: var(--dim);
+  margin-top: 0;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--brass-dark);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.contact {
+  margin: 1rem 0 0;
+}
+
+footer {
+  max-width: 42rem;
+  margin: 3rem auto 0;
+  border-top: 1px solid var(--brass-dark);
+  padding-top: 1rem;
+  color: var(--dim);
+  font-size: 0.85rem;
+}
+
+nav {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 1.5rem;
+}
