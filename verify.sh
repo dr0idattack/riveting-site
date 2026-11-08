@@ -56,7 +56,7 @@ fi
 if [ "${1:-}" = "--live" ]; then
   for page in '' 'support.html' 'privacy.html'; do
     if curl -fsSL -o /dev/null "$BASE/${page}"; then
-      echo "ok   live https://$BASE/${page#$}"
+      echo "ok   live $BASE/$page"
     else
       echo "FAIL live $BASE/$page"
       fail=1
